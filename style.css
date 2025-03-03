@@ -5,7 +5,43 @@ h1 {
 img {
     position: absolute;
     top: 25%;
-    left: 48%;
-    transform: translateX(-48%);
+    left: 50%;
+    transform: translateX(-50%);
     
+}
+
+#aboutme {
+    font-size: 25px;
+    background-color: navy;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    translate: -60% -50%;
+}
+
+#experience {
+    font-size: 25px;
+    background-color: navy;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    translate: -60% -50%;
+}
+
+#contacts {
+    font-size: 25px;
+    background-color: navy;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    translate: -60% -50%;
 }
