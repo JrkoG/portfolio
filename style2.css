@@ -22,10 +22,10 @@
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   color: white;
   padding: 50px;
+  padding-right: 20%;
   border: 3px solid;
   height: 300px;
   background-color: rgb(43, 42, 42);
-
 }
 
 .experience {
@@ -64,4 +64,56 @@
 
 @keyframes typing {
   from { width: 0}
+}
+
+.container {
+  width: 18vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 43%;
+  left: 90%;
+  overflow: hidden;
+  border: 20px solid #ffffff;
+  border-radius: 5px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 12s infinite;
+}
+img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(0);
+  }
+  38% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-100%);
+  }
+  71% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.aspiring {
+  font-size: 20px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  color: white;
+  padding: 50px;
+  padding-right: 20%;
+  border: 3px solid;
+  height: 300px;
+  background-color: rgb(43, 42, 42);
 }
