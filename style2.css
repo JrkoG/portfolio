@@ -213,3 +213,8 @@ img {
   font-size: 25px;
   position: relative;
 }
+
+.button {
+  height: 100px;
+  width: 100px;
+}
