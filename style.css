@@ -27,14 +27,14 @@ img {
 #experience {
     font-size: 25px;
     background-color: navy;
-    border-radius: 30px;
+    border-radius: 40px;
     color: white;
     text-align: center;
     position: absolute;
-    top: 65%;
+    top: 67%;
     left: 51%;
     translate: -60% -50%;
-    width: 200px;
+    width: 250px;
 }
 
 #contacts {
@@ -44,7 +44,7 @@ img {
     color: white;
     text-align: center;
     position: absolute;
-    top: 70%;
+    top: 74%;
     left: 51%;
     translate: -60% -50%;
     width: 200px;
@@ -88,7 +88,7 @@ body {
   width: 20px;
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
-  animation: animate 19s linear infinite;
+  animation: animate 4s linear infinite;
 }
 
 .background li:nth-child(0) {
