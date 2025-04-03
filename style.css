@@ -1,4 +1,5 @@
 h1 {
+    display: flexbox;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
 }
@@ -12,6 +13,7 @@ img {
 }
 
 #aboutme {
+    display: flexbox;
     font-size: 25px;
     background-color: navy;
     border-radius: 30px;
@@ -25,6 +27,7 @@ img {
 }
 
 #experience {
+    display: flexbox;
     font-size: 25px;
     background-color: navy;
     border-radius: 40px;
@@ -38,6 +41,7 @@ img {
 }
 
 #contacts {
+  display: flexbox;
     font-size: 25px;
     background-color: navy;
     border-radius: 30px;

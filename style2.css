@@ -28,6 +28,11 @@ li a{
   margin-right: 25px;
 }
 
+.button {
+  height: 100px;
+  width: 100px;
+}
+
 .about {
   font-size: 20px;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
