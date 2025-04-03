@@ -28,9 +28,13 @@ li a{
   margin-right: 25px;
 }
 
-.button {
-  height: 100px;
-  width: 100px;
+.icons {
+  border: 8px solid black;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .about {
@@ -97,17 +101,17 @@ img {
 }
 
 .word {
-  width: 400px;
+  width: 650px;
   height: 400px;
   position: absolute;
-  left: 15%;
+  left: 10%;
 }
 
 .ppt {
-  width: 400px;
+  width: 650px;
   height: 400px;
   position: absolute;
-  left: 64%;
+  left: 60%;
 }
 
 .ac2 {
