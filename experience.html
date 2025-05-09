@@ -10,34 +10,62 @@
     <title>Rean Jericho Guinto</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navdiv">
-            <div class="logo"><a href="#">Tech Experience</a></div>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page2.html">About Me</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-              </ul>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="index.html">Rean Jericho Guinto</a></div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">About Me</a></li>
+        <li><a href="experience.html">Tech Stack</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="background">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul> 
+
     <h1 class="experience">Programming Experience</h1>
     <h2 class="header2">Here are my Programming Languages that I'm familiar with:</h2>
 
     <div class="row">
       <div class="column">
         <img class="clogo" src="cproglogo.png" alt="C Programming">
+        <h2 class="name">C</h2>
       </div>
       <div class="column">
         <img class="javalogo" src="java-logo-1.png" alt="Java Programming">
+        <h2 class="name">Java</h2>
       </div>
       <div class="column">
         <img class="htmllogo" src="html-logo.png" alt="HTML Programming">
+        <h2 class="name">HTML</h2>
       </div>
       <div class="column">
         <img class="csslogo" src="css-logo.png" alt="CSS Programming">
+        <h2 class="name">CSS</h2>
       </div>
       <div class="column">
         <img class="sqllogo" src="sql-logo.png" alt="SQL Programming">
+        <h2 class="name">SQL</h2>
       </div>
     </div>
 
@@ -46,8 +74,17 @@
 
     <div class="row2">
       <div class="column">
+        <img class="certs" src="word-cert.jpg" alt="Word">
         <p class="ac1">Microsoft Office Specialist Word 2019</p>
-        <img class="certiport" src="certiport.jpg" alt="Certifications">
+      </div>
+      <div class="column">
+        <img class="certs" src="powerpoint-cert.jpg" alt="Powerpoint">
+        <p class="ac1">Microsoft Office Specialist Powerpoint 2019</p>
+      </div>
+      <div class="column">
+        <img class="certs" src="databases-cert.jpg"  alt="Database">
+        <p class="ac1">Information Techology Specialist Databases</p>
+      </div>
       </div>
     </div>
 
@@ -56,13 +93,25 @@
     <div class="row3">
       <div class="column">
         <img class="androidlogo" src="androidstudio-logo.png" alt="Android Studio">
+        <h2 class="name">Android Studio</h2>
       </div>
       <div class="column">
         <img class="vscodelogo" src="vscode-logo.png" alt="VS Code">
+        <h2 class="name">VS Code</h2>
       </div>
       <div class="column">
         <img class="githublogo" src="github-logo.png" alt="GitHub">
+        <h2 class="name">Github</h2>
       </div>
     </div>
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+    
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    </script>
 </body>
 </html>

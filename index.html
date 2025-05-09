@@ -13,6 +13,28 @@
   </style>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="index.html">Rean Jericho Guinto</a></div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">About Me</a></li>
+        <li><a href="experience.html">Tech Stack</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
     <ul class="background">
       <li></li>
       <li></li>
@@ -32,6 +54,7 @@
       <li></li>
       <li></li>
     </ul>
+
   
     <div class="container">
       <img src="Guinto_pic.jpg" alt="homepage pic" class="profile-pic">
@@ -41,9 +64,10 @@
   
       <div class="buttons">
         <a href="page2.html" class="btn">About Me</a>
-        <a href="experience.html" class="btn">Tech Experience</a>
+        <a href="experience.html" class="btn">Tech Stack</a>
         <a href="contacts.html" class="btn">Contacts</a>
       </div>
     </div>
+
 </body>
 </html>
