@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
   flex-shrink: 1;
+  z-index: 1000;
 }
 
 .logo a {
@@ -332,13 +333,63 @@ p {
   position: relative;
 }
 
-@media (max-width: 1536px) {}
+@media (max-width: 1535px) {
+  .certs {
+    width: 400px;
+    height: 300px;
+  }
+}
 
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+  .certs {
+    width: 350px;
+    height: 250px;
+  }
+  .ac1 {
+    font-size: 20px;
+  }
+}
 
-@media (max-width: 1024px) {}
+@media (max-width: 910px) {
+  .certs {
+    width: 300px;
+    height: 200px;
+  }
+  .ac1 {
+    font-size: 15px;
+  }
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .h1 {
+    font-size: 40px;
+  }
+  .p {
+    font-size: 15px;
+  }
+}
 
-@media (max-width: 768px) {}
+@media (max-width: 890px) {
+  .about, .aspiring {
+    font-size: 20px;
+  }
+  .section-header {
+    font-size: 40px;
+  }
+  .experience {
+    font-size: 30px;
+  }
+  .header2 {
+    font-size: 20px;
+  }
+  .h1 {
+    font-size: 35px;
+  }
+  .p {
+    font-size: 10px;
+  }
+}
 
 @media (max-width: 640px) {
   .logo a{
@@ -346,6 +397,12 @@ p {
   }
   .li a{
     font-size: 14px;
+  }
+  .about, .aspiring {
+    font-size: 15px;
+  }
+  .section-header {
+    font-size: 30px;
   }
 }
 

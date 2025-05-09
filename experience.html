@@ -22,6 +22,14 @@
       </ul>
     </div>
   </nav>
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 
   <ul class="background">
     <li></li>
@@ -104,14 +112,5 @@
         <h2 class="name">Github</h2>
       </div>
     </div>
-
-    <script>
-      const menuToggle = document.getElementById('menu-toggle');
-      const navLinks = document.getElementById('nav-links');
-    
-      menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-      });
-    </script>
 </body>
 </html>

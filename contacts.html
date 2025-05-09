@@ -19,6 +19,14 @@
       </ul>
     </div>
   </nav>
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 
   <ul class="background">
     <li></li>
@@ -60,14 +68,5 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </div>
-  
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-  
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-  </script>
 </body>
 </html>
