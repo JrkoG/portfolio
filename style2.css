@@ -140,7 +140,7 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
 
 .row, .row2, .row3 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 20px 0;
   flex-wrap: wrap;
   background-color: #094c97; 
@@ -148,37 +148,54 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
 
 .column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 10px;
   flex: 1;
-  min-width: 250px;
   text-align: center;
+  flex: 0 0 48%; /* two items per row */
+  box-sizing: border-box;
+  margin: 1%;
 }
 
 .clogo, .javalogo, .word, .ppt, .htmllogo, .csslogo, .sqllogo, .androidlogo, .vscodelogo, .githublogo {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
+  width: 50px;
+  height: 50px;
   transition: transform 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .clogo:hover, .javalogo:hover, .word:hover, .ppt:hover, .htmllogo:hover, .csslogo:hover, .sqllogo:hover, .androidlogo:hover, .vscodelogo:hover, .githublogo:hover, .certs:hover {
   transform: scale(1.2);
 }
 
-.cproglang, .java, .ac1, .ac2 {
+.ac1 {
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   font-size: 25px;
   margin: 10px 0;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .certs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 500px;
   height: 400px;
+}
+.certificate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /*Contacts*/
 .icons {
@@ -435,5 +452,28 @@ p {
   }
   .li a{
     font-size: 8px;
+  }
+}
+@media (max-width: 400px) {
+  .about, .aspiring {
+    width: 200px;
+    margin-left: 20px;
+  }
+  .h1 {
+    font-size: 20px;
+  }
+  .p {
+    font-size: 15px;
+    width: 100px;
+  }
+  .icons a{
+    width: 50px;
+    height: 50px;
+  }
+  .button {
+    width: 90px;
+  }
+  .certificate {
+    width: 200px;
   }
 }
