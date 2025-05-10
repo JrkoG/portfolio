@@ -48,16 +48,6 @@
 .nav-links li a:hover {
   color: #1E90FF; 
 }
-
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -94,7 +84,7 @@ body {
   padding: 0;
   background-color: #27408B;
   color: white;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .main-content {
@@ -104,7 +94,7 @@ body {
   flex-direction: column;
   padding: 40px;
   gap: 30px;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 .text-section {
@@ -128,6 +118,7 @@ body {
   background-color: rgb(43, 42, 42);
   border-radius: 10px;
   font-family: 'Bebas Neue', sans-serif;
+  width: 700px;
 }
 
 /* tech experience */
@@ -196,7 +187,7 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 400px;
+  margin-top: 300px;
   gap: 20px;
 }
 
@@ -233,6 +224,7 @@ h1 {
 p {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
+  width: 500px; 
 }
 
 .background {
@@ -368,8 +360,8 @@ p {
   .p {
     font-size: 15px;
   }
-  .row {
-    flex-direction: row;
+  .clogo, .javalogo, .csslogo, .htmllogo, .sqllogo, .githublogo, .androidlogo, .vscodelogo {
+    flex-flow: column;
   }
 }
 
@@ -394,6 +386,19 @@ p {
   }
 }
 
+@media (max-width: 809px) {
+  .about, .aspiring {
+    width: 600px;
+  }
+}
+
+@media (max-width: 709px) {
+  .about, .aspiring {
+    width: 500px;
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 640px) {
   .logo a{
     font-size: 25px;
@@ -406,6 +411,12 @@ p {
   }
   .section-header {
     font-size: 30px;
+  }
+  .h1 {
+    font-size: 30px;
+  }
+  .p {
+    font-size: 8px;
   }
 }
 
