@@ -11,7 +11,7 @@
 }
 
 .navdiv {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -367,6 +367,9 @@ p {
   }
   .p {
     font-size: 15px;
+  }
+  .row {
+    flex-direction: row;
   }
 }
 
