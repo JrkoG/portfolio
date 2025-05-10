@@ -172,7 +172,7 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   transform: scale(1.2);
 }
 
-.ac1 {
+.ac1, .name {
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -186,8 +186,9 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
 .certs {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  padding: 20px;
   width: 500px;
   height: 400px;
 }
