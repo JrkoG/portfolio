@@ -47,9 +47,10 @@
 .nav-links li a {
   text-decoration: none;
   color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 600;
   transition: color 0.3s ease;
+  font-size: 18px;
 }
 
 .nav-links li a:hover {

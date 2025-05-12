@@ -25,7 +25,7 @@
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
-  font-family: 'Bebas Nue', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   text-decoration: none;
 }
 
@@ -41,9 +41,10 @@
 .nav-links li a {
   text-decoration: none;
   color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 600;
   transition: color 0.3s ease;
+  font-size: 18px;
 }
 
 .nav-links li a:hover {
@@ -86,7 +87,6 @@ body {
   padding: 0;
   background-color: #27408B;
   color: white;
-  font-family: 'Bebas Neue', sans-serif;
 }
 
 .main-content {
@@ -109,6 +109,7 @@ body {
   justify-content: center;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 50px;
+  color: white;
 }
 
 .about,
@@ -121,6 +122,7 @@ body {
   border-radius: 10px;
   font-family: 'Bebas Neue', sans-serif;
   width: 700px;
+  color: white;
 }
 
 /* tech experience */
@@ -140,7 +142,7 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   margin-top: 20px;
 }
 
-.row, .row2, .row3 {
+.row, .row2 {
   display: flex;
   justify-content: center;
   margin: 20px 0;
@@ -156,12 +158,10 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   margin: 10px;
   flex: 1;
   text-align: center;
-  flex: 0 0 48%; /* two items per row */
-  box-sizing: border-box;
   margin: 1%;
 }
 
-.clogo, .javalogo, .word, .ppt, .htmllogo, .csslogo, .sqllogo, .androidlogo, .vscodelogo, .githublogo {
+.clogo, .javalogo, .word, .ppt, .htmllogo, .csslogo, .sqllogo, .androidlogo, .vscodelogo, .githublogo, .gitlogo, .javascript {
   width: 50px;
   height: 50px;
   transition: transform 1s;
@@ -170,7 +170,7 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   align-items: center;
 }
 
-.clogo:hover, .javalogo:hover, .word:hover, .ppt:hover, .htmllogo:hover, .csslogo:hover, .sqllogo:hover, .androidlogo:hover, .vscodelogo:hover, .githublogo:hover, .certs:hover {
+.clogo:hover, .javalogo:hover, .word:hover, .ppt:hover, .htmllogo:hover, .csslogo:hover, .sqllogo:hover, .androidlogo:hover, .vscodelogo:hover, .githublogo:hover, .certs:hover .gitlogo:hover, .javascript:hover{
   transform: scale(1.2);
 }
 
@@ -200,6 +200,18 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   justify-content: center;
   align-items: center;
 }
+
+.cert-buttons {
+  display: flex;
+  background-color: navy;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+
 /*Contacts*/
 .icons {
   display: flex;
@@ -403,6 +415,10 @@ p {
   }
   .p {
     font-size: 15px;
+  }
+  .column {
+    flex: 0 0 48%; /* two items per row */
+    box-sizing: border-box;
   }
 }
 
