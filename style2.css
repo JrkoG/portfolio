@@ -8,7 +8,6 @@
   left: 0;
   z-index: 999;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  border: 3px solid red;
 }
 
 .navdiv {
@@ -19,7 +18,6 @@
   flex-shrink: 1;
   flex-wrap: wrap;
   z-index: 1000;
-  border: 3px solid red;
 }
 
 .logo a {
@@ -149,7 +147,6 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   margin: 20px 0;
   flex-wrap: wrap;
   background-color: #094c97; 
-  border: 3px solid red;
 }
 
 .column {
