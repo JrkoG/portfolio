@@ -184,6 +184,7 @@ body {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 /* tech experience */
@@ -201,6 +202,9 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
 .header2, .achieve {
   font-size: 30px;
   margin-top: 20px;
+}
+.achieve {
+  margin-top: 100px;
 }
 
 .row {
@@ -231,7 +235,7 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   align-items: center;
 }
 
-.clogo:hover, .javalogo:hover, .word:hover, .ppt:hover, .htmllogo:hover, .csslogo:hover, .sqllogo:hover, .androidlogo:hover, .vscodelogo:hover, .githublogo:hover, .certs:hover .gitlogo:hover, .javascript:hover{
+.clogo:hover, .javalogo:hover, .word:hover, .ppt:hover, .htmllogo:hover, .csslogo:hover, .sqllogo:hover, .androidlogo:hover, .vscodelogo:hover, .githublogo:hover, .certs:hover .gitlogo:hover, .javascript:hover, .certs:hover{
   transform: scale(1.2);
 }
 
@@ -244,34 +248,104 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   align-items: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: 100%;
 }
 
 .certs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: space-evenly;
-  padding: 20px;
-  width: 500px;
-  height: 400px;
-}
-.certificate {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  padding: 15px;
+  margin: 0 auto;
+  display: block;
 }
 
 .cert-buttons {
   display: flex;
+  justify-content: center;
   background-color: navy;
   border-radius: 30px;
-  padding: 10px;
+  padding: 10px 20px;
   color: white;
   text-decoration: none;
   text-align: center;
   border: none;
   font-family: 'Bebas Neue', sans-serif;
+  margin: 10px auto;
+}
+
+@media (max-width: 480px) {
+  .ac1, .name {
+    font-size: 20px;
+    margin: 6px 0;
+  }
+
+  .certs {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(50% - 20px);
+  }
+
+  .cert-buttons {
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .ac1, .name {
+    font-size: 24px;
+    margin: 9px 0;
+  }
+
+  .certs {
+    padding: 12px;
+  }
+
+  .cert-buttons {
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 25px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .ac1, .name {
+    font-size: 28px;
+  }
+
+  .certs {
+    padding: 20px;
+    max-width: 700px;
+  }
+
+  .cert-buttons {
+    font-size: 20px;
+    padding: 12px 25px;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .ac1, .name {
+    font-size: 22px;
+    margin: 8px 0;
+  }
+
+  .certs {
+    padding: 8px;
+  }
+
+  .cert-buttons {
+    font-size: 17px;
+    padding: 7px 14px;
+    border-radius: 22px;
+  }
 }
 
 /*Contacts*/
@@ -312,12 +386,12 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
 
 h1 {
   font-size: 50px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 p {
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   width: 500px; 
 }
 
