@@ -226,7 +226,7 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   text-align: center;
 }
 
-.clogo, .javalogo, .word, .ppt, .htmllogo, .csslogo, .sqllogo, .androidlogo, .vscodelogo, .githublogo, .gitlogo, .javascript {
+.clogo, .javalogo, .word, .ppt, .htmllogo, .csslogo, .sqllogo, .androidlogo, .vscodelogo, .githublogo, .gitlogo, .javascript, .dartlogo, .flutterlogo, .firebaselogo, .nodelogo, .mongologo, .postlogo, .renderlogo{
   width: 50px;
   height: 50px;
   transition: transform 1s;
@@ -235,7 +235,7 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   align-items: center;
 }
 
-.clogo:hover, .javalogo:hover, .word:hover, .ppt:hover, .htmllogo:hover, .csslogo:hover, .sqllogo:hover, .androidlogo:hover, .vscodelogo:hover, .githublogo:hover, .certs:hover .gitlogo:hover, .javascript:hover, .certs:hover{
+.clogo:hover, .javalogo:hover, .word:hover, .ppt:hover, .htmllogo:hover, .csslogo:hover, .sqllogo:hover, .androidlogo:hover, .vscodelogo:hover, .githublogo:hover, .certs:hover .gitlogo:hover, .javascript:hover, .certs:hover, .dartlogo:hover, .flutterlogo:hover, .firebaselogo:hover, .nodelogo:hover, .mongologo:hover, .postlogo:hover, .renderlogo:hover{
   transform: scale(1.2);
 }
 
