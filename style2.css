@@ -226,7 +226,16 @@ h1.experience, h2.header2, h1.achieve, h1.tools {
   text-align: center;
 }
 
-.clogo, .javalogo, .word, .ppt, .htmllogo, .csslogo, .sqllogo, .androidlogo, .vscodelogo, .githublogo, .gitlogo, .javascript, .dartlogo, .flutterlogo, .firebaselogo, .nodelogo, .mongologo, .postlogo, .renderlogo{
+.clogo, .javalogo, .word, .ppt, .htmllogo, .csslogo, .sqllogo, .androidlogo, .vscodelogo, .githublogo, .gitlogo, .javascript{
+  width: 50px;
+  height: 50px;
+  transition: transform 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dartlogo, .flutterlogo, .firebaselogo, .nodelogo, .mongologo, .postlogo, .renderlogo {
   width: 50px;
   height: 50px;
   transition: transform 1s;
