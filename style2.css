@@ -585,3 +585,36 @@ p {
     margin-right: auto; 
   }
 }
+/* ===== Portfolio midterm additions ===== */
+.todo{background:#ffe066;color:#222;padding:0 4px;border-radius:3px;font-family:'Open Sans',sans-serif;font-size:.85em}
+.meta{font-family:'Open Sans',sans-serif;font-size:14px;width:auto;text-align:center;margin:0 0 8px}
+.page-wrap{max-width:1000px;margin:0 auto;padding:110px 20px 50px;box-sizing:border-box}
+.pg-title{text-align:center;font-size:48px;margin:0 0 6px}
+.pg-sub{text-align:center;width:auto;margin:0 auto 28px;font-size:22px}
+.page-wrap p,.page-wrap li,.page-wrap td,.page-wrap th,.page-wrap dd{font-family:'Open Sans',sans-serif;font-size:16px;width:auto}
+.page-wrap .pg-sub{font-family:'Bebas Neue',sans-serif;font-size:22px}
+.card{background:rgba(0,34,68,.55);border:1px solid rgba(255,255,255,.3);border-radius:12px;padding:22px;margin-bottom:20px;box-sizing:border-box}
+.card h2{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:26px;margin:16px 0 6px}
+.card h2:first-child,.card .badge+h2{margin-top:8px}
+.card h2 small{font-size:16px;opacity:.8}
+.card a,.table-wrap a{color:#9fd0ff}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.badge{display:inline-block;background:#1E90FF;border-radius:20px;padding:3px 12px;font-family:'Open Sans',sans-serif;font-size:13px}
+.sec{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:32px;text-align:center;margin:30px 0 14px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.gallery figure{margin:0;text-align:center}
+.gallery figcaption{font-family:'Open Sans',sans-serif;font-size:14px;margin-top:6px}
+.gallery img{width:100%;border-radius:8px}
+.ph{display:flex;align-items:center;justify-content:center;min-height:180px;border:2px dashed rgba(255,255,255,.5);border-radius:8px;font-family:'Open Sans',sans-serif;font-size:14px;opacity:.8;text-align:center;padding:10px;box-sizing:border-box;width:90%;margin:0 auto}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:rgba(0,34,68,.55)}
+th,td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.2);text-align:left}
+th{background:#002244;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:20px!important}
+
+/* 10 nav links need the hamburger menu up to 1100px */
+@media (max-width:1100px){
+  .menu-toggle{display:block;margin-right:20px}
+  .nav-links{display:none;flex-direction:column;width:100%;margin-right:0;gap:0;text-align:center}
+  .nav-links.show{display:flex}
+}
+@media (min-width:1101px){.nav-links{gap:18px;margin-right:0}}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rean Jericho Guinto | Capstone</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="index.html">Rean Jericho Guinto</a></div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="certificate.html">Certificates</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="tech-stack.html">Tech Stack</a></li>
+        <li><a href="iot-project.html">IoT Project</a></li>
+        <li><a href="capstone.html">Capstone</a></li>
+        <li><a href="course-projects.html">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggleBtn.addEventListener('click', () => { navLinks.classList.toggle('show'); });
+  </script>
+
+  <main class="page-wrap">
+    <h1 class="pg-title">Capstone Project</h1>
+    <p class="pg-sub">C.A.R.E: Smart Wireless IoT-Enabled Location Tracker for Rapid Emergency Intervention and Real-Time Response for Elderly and Persons with Disability using Arduino Framework</p>
+    <div class="card">
+      <span class="badge">Status: Ongoing</span>
+      <h2>Description</h2>
+      <p>C.A.R.E. (Computerized Auxiliary Response for Elders and PWDs) is an Arduino-based wearable IoT emergency alert system. It has two triggers: a tactile push-button for manual alerts and an ADXL345 accelerometer for automatic fall detection, so help can be called even if the user is unconscious. On activation, the device sends the user&rsquo;s GPS location and identification to the C.A.R.E. mobile app, family members, and caregivers. It switches between Wi-Fi and GSM so alerts still go out when the internet is down.</p>
+      <h2>Objectives</h2>
+      <ul><li>Design a wearable emergency alert device usable by elderly individuals, PWDs, outdoor workers, and people living alone.</li><li>Implement a dual-trigger system: manual push-button plus automated fall detection.</li><li>Capture and transmit precise GPS coordinates with each alert.</li><li>Build a mobile app that sends real-time distress notifications and location updates to family and emergency contacts.</li><li>Provide a cost-effective alternative to commercial wearable emergency devices.</li><li>Evaluate functionality, reliability, and response time of the system.</li></ul>
+      <h2>Technologies Used</h2>
+      <p><strong>Hardware:</strong> ESP32, NEO-6M GPS, Air780E 4G module, ADXL345 accelerometer, push-button switch, rechargeable battery module</p>
+      <p><strong>Software:</strong> Arduino IDE, React Expo (caregiver mobile app), Next.js (web monitoring interface), Firebase Realtime Database and Authentication, Google Maps API, JSON data format, Visual Studio Code</p>
+      <p><strong>Communication:</strong> Wi-Fi primary, GSM/SMS fallback</p>
+      <p><strong>Methodology:</strong> Agile (three sprints over 14 weeks); Black-Box and White-Box testing; unit, integration, and system testing</p>
+      <h2>Team Members</h2>
+      <ul><li>Rean Jericho G. Guinto &ndash; Backend Developer</li><li>John Robert A. Rodriguez</li><li>Luke Gabriel P. Sandoval</li><li>Jericho Noel A. Tibayan</li></ul>
+      <p><strong>Adviser:</strong> Dr. Alvin Jason A. Virata</p>
+      <h2>My Role</h2>
+      <p>I have served as the Backend Developer for this project, responsible for designing and implementing the server-side logic, database integration, and API development for the C.A.R.E. mobile app.</p>
+      <h2>Results</h2>
+      <p>The prototype successfully integrated all hardware modules with dual-trigger activation. Hybrid Wi-Fi/GSM switching kept alert latency within <strong>2 to 5 seconds</strong>. The system was evaluated against ISO/IEC 25010 quality characteristics by <strong>152 end-users</strong> and <strong>31 IT experts</strong>, and both groups rated it <em>Strongly Agree / Excellent</em>. Survey reliability (Cronbach&rsquo;s alpha): 0.970 for end-users and 0.849 for IT experts.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Quality Characteristic</th><th>End-User Mean</th><th>IT Expert Mean</th></tr></thead>
+        <tbody><tr><td>Functional Suitability</td><td>4.51</td><td>4.57</td></tr><tr><td>Performance Efficiency</td><td>4.51</td><td>4.52</td></tr><tr><td>Compatibility</td><td>4.42</td><td>4.47</td></tr><tr><td>Usability</td><td>4.49</td><td>4.43</td></tr><tr><td>Reliability</td><td>4.40</td><td>4.54</td></tr><tr><td>Security</td><td>4.45</td><td>4.48</td></tr><tr><td>Maintainability</td><td>4.42</td><td>4.46</td></tr><tr><td>Portability</ td>< td > 4.48 </ td >< td > 4.42 </ td ></ tr >< tr >< td >< strong > Overall Mean </ strong ></ td >< td >< strong > 4.46 </ strong ></ td >< td >< strong > 4.49 </ strong ></ td ></ tr ></ tbody >
+      </table></div>
+      <p><a href="documents/capstone.pdf" target="_blank">View full Capstone paper (PDF)</a></p>
+    </div>
+</body>
+</html>

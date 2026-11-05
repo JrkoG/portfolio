@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rean Jericho Guinto | IoT Project</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="index.html">Rean Jericho Guinto</a></div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="certificate.html">Certificates</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="tech-stack.html">Tech Stack</a></li>
+        <li><a href="iot-project.html">IoT Project</a></li>
+        <li><a href="capstone.html">Capstone</a></li>
+        <li><a href="course-projects.html">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggleBtn.addEventListener('click', () => { navLinks.classList.toggle('show'); });
+  </script>
+
+  <main class="page-wrap">
+    <h1 class="pg-title">IoT Project</h1>
+    <p class="pg-sub">C.A.R.E: An IoT Wearable Device for Real-Time Emergency Alert System</p>
+    <div class="card">
+      <span class="badge">Course: IoT / IoE &middot; Adviser: Dr. Alvin Jason A. Virata</span>
+      <h2>Description</h2>
+      <p>A low-cost wearable emergency device (wristband or pendant) built on an ESP32 microcontroller. With one press of a tactile push-button, it reads the user&rsquo;s GPS location and sends a distress signal to a companion mobile app and designated emergency contacts. It is designed for elderly individuals, persons with disabilities, outdoor workers, and people living alone, who may not be able to unlock a phone and dial for help during a crisis.</p>
+      <h2>Objectives</h2>
+      <ul><li>Design a wearable emergency alert device that is easy to use for elderly people, PWDs, outdoor workers, and people living alone.</li><li>Implement a simple push-button mechanism to trigger an alert quickly.</li><li>Integrate location tracking so GPS coordinates are sent with the alert.</li><li>Send notifications to a mobile application, family members, and emergency contacts.</li><li>Provide a cost-effective alternative to commercial wearable emergency devices.</li><li>Evaluate the functionality, reliability, and response time of the system.</li></ul>
+      <h2>Technologies / Components Used</h2>
+      <p><strong>Hardware:</strong></p>
+      <ul><li>ESP32 microcontroller (built-in Wi-Fi and Bluetooth)</li><li>NEO-6M GPS module</li><li>SIM800L GSM/GPRS module (SMS fallback)</li><li>Tactile push-button switch</li><li>3.7V Li-Po battery (600&ndash;1000 mAh), TP4056 charging module, voltage regulator</li><li>Buzzer and LED indicator</li><li>Breadboard and jumper wires (prototype), PCB and wristband enclosure (final)</li></ul>
+      <p><strong>Software:</strong></p>
+      <ul><li>Arduino IDE (C/C++ firmware)</li><li>Firebase Realtime Database and Firebase Cloud Messaging</li><li>Google Maps API</li><li>React Expo (mobile app)</li><li>Visual Studio Code and GitHub</li></ul>
+      <h2>How It Works</h2>
+      <ul><li><strong>Perception layer:</strong> pressing the button wakes the ESP32, which gets the user&rsquo;s coordinates from the NEO-6M GPS.</li><li><strong>Network layer:</strong> the alert is sent over Wi-Fi to Firebase. If Wi-Fi is unavailable, the SIM800L sends an SMS with a Google Maps link instead.</li><li><strong>Application layer:</strong> the mobile app alerts the guardian and shows the user&rsquo;s location on a map.</li><li>The buzzer and LED confirm to the user that the alert was sent.</li></ul>
+      <h2>My Role / Contribution</h2>
+      <p>Backend Developer</p>
+      <p><strong>Team:</strong> Rean Jericho G. Guinto, John Robert Rodriguez, Luke Gabriel Sandoval, Jericho Noel A. Tibayan</p>
+      <h2>Output / Result</h2>
+      <p>A working prototype that integrates the ESP32, GPS, GSM, battery, and feedback components with a Firebase-backed mobile app. Testing confirmed alert delivery over both communication paths (Wi-Fi and SMS fallback), GPS coordinate delivery, and local buzzer/LED feedback.</p>
+      <p><a href="documents/iot-paper.pdf" target="_blank">View full IoT paper (PDF)</a></p>
+    </div>
+  </main>
+</body>
+</html>
